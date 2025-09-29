@@ -1,6 +1,6 @@
 //Variables.
 
-let varoableSinValor;
+let variableSinValor;
 
 let booleano1 = false;
 let booleano2 = true;
@@ -10,8 +10,8 @@ const TAU = 2 * PI;
 
 //Booleanos
 let booleanoAnd = booleano1 && booleano2;
-let booleanoNot = !booleano1;
-let booleanMix0 = booleano1 || (booleano2 && (booleano1 || (booleano1 && !booleano2)));
+let booleanoNot =  booleano2 == !booleano1;
+let booleanoMix0 = (booleano1 || booleano2) && (booleano1 || (!booleano1 && !booleano2));
 
 //Operadores
 let incrementarDesp = 2;
@@ -21,12 +21,13 @@ let incrementarAntes = 2;
 let resultadoAntes = ++incrementarAntes;
 
 //Bucles 
-let ContarHasta10_2 = 0;
-for(let i = 0; i < 10; i++) {
-    ContarHasta10_2++
+let contarHasta10_2 = 0;
+for (let i = 0; i < 10; i++) {
+  contarHasta10_2++;
 }
-console.log(ContarHasta10_2 === 10);
-console.log("Valor requerido:",ContarHasta10_2);
+
+console.log(contarHasta10_2 === 10);
+console.log("Valor requerido:",contarHasta10_2);
 
 let postI =0;
 let postJ = 0;
@@ -36,7 +37,7 @@ for (let i = 0; i < 11; i++){
 }
 console.log(postI);
 
-let sumaPAres = 0;
+let sumaPares = 0;
 for(let i = 0; i < 10; i++){
     if(i % 2 == 0){
         sumaPares += i
@@ -47,32 +48,32 @@ for(let i = 0; i < 10; i++){
 
 //Variables.
 let variableValorNumerico = 5;
-const miNombre = "Artur";
-const miNumeroFav = 7;
+
+const MiNombre = "Artur";
+const MiNumeroFav = 7;
 
 //Booleanos.
 
-let booleanOr = booleano1 || booleano2;
-let booleanoMix1 = (booleano1 && 
-TAU/2 === PI) || (variableValorNumerico >= miNumeroFav);
+let booleanoOr = booleano1 || booleano2;
+let booleanoMix1 =
+  (booleano1 && TAU / 2 === PI) || (variableValorNumerico >= MiNumeroFav);
 
 let seisNoEsNueve = 6 !== 9;
-let booleanoMix2 = 
-variableValorNumerico => 1 || variableValorNumerico < -(miNumeroFav * TAU);
-
+let booleanoMix2 =
+  variableValorNumerico > 0 || variableValorNumerico < (MiNumeroFav * TAU);
 //Operadores
-valorSuma = miNumeroFav + variableValorNumerico;
-valorResta = miNumeroFav - variableValorNumerico;
-valorMultiplicacion = miNumeroFav * variableValorNumerico;
-valorDivision = miNumeroFav / 3;
+valorSuma = MiNumeroFav + variableValorNumerico;
+valorResta = MiNumeroFav - variableValorNumerico;
+valorMultiplicacion  = MiNumeroFav * variableValorNumerico;
+valorDivision = MiNumeroFav / 3;
 
 //Bucles
-let contarHasta10 = 0;
+let contarHasta10  = 0;
 while(contarHasta10 < 10){
     contarHasta10++;
 }
 
-let preI = 0;
+let preI  = 0;
 let preJ = 0;
 
 for(let i = 0; i < 11; i++){
